@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>sdnts</title>
+
+    <style>
+      @font-face {
+        font-family: "Base Neue Wide";
+        src: url("/BaseNeueTrial-WideExtraBold.woff2") format("woff2");
+        font-weight: "normal";
+      }
+
+      @font-face {
+        font-family: "Base Neue Light";
+        src: url("/BaseNeueTrial-Light.woff2") format("woff2");
+        font-weight: "normal";
+      }
+
+      body {
+        background: repeating-linear-gradient(
+          -45deg,
+          rgba(23, 20, 19, 1),
+          rgba(23, 20, 19, 1) 80px,
+          rgba(255, 255, 255, 0.05) 80px,
+          rgba(255, 255, 255, 0.05) 81px
+        );
+      }
+    </style>
+  </head>
+
+  <body
+    class="select-none flex flex-col items-center justify-center bg-black w-screen h-screen"
+  >
+    <header class="w-10/12 mt-8 mb-[-2rem] flex items-center justify-start">
+      <a href="/" class="opacity-25 hover:opacity-100 transition-all">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 128 128"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M32.9038 95.0962C29.0115 91.2038 31.5923 83.0385 29.6038 78.2577C27.6154 73.4769 20 69.2885 20 64C20 58.7115 27.5308 54.6923 29.6038 49.7423C31.6769 44.7923 29.0115 36.7962 32.9038 32.9038C36.7962 29.0115 44.9615 31.5923 49.7423 29.6038C54.5231 27.6154 58.7115 20 64 20C69.2885 20 73.3077 27.5308 78.2577 29.6038C83.2077 31.6769 91.2038 29.0115 95.0962 32.9038C98.9885 36.7962 96.4077 44.9615 98.3962 49.7423C100.385 54.5231 108 58.7115 108 64C108 69.2885 100.469 73.3077 98.3962 78.2577C96.3231 83.2077 98.9885 91.2038 95.0962 95.0962C91.2038 98.9885 83.0385 96.4077 78.2577 98.3962C73.4769 100.385 69.2885 108 64 108C58.7115 108 54.6923 100.469 49.7423 98.3962C44.7923 96.3231 36.7962 98.9885 32.9038 95.0962Z"
+            fill="#FFA800"></path>
+        </svg></a
+      >
+    </header>
+
+    <main class="w-auto h-full flex flex-col items-center justify-center">
+      <div
+        class="w-full flex items-center justify-between font-content text-white text-xl opacity-25"
+      >
+        <span class="animate-plusCCW">+</span>
+        <hr class="w-96 animate-borders" />
+        <span class="animate-plusCW">+</span>
+      </div>
+
+      <section class="mt-8 uppercase text-[16rem]" style="line-height: 0.9;">
+        <p class="text-black" style="-webkit-text-stroke: 1px #FFFFFF;">
+          sdnts
+        </p>
+        <h1 class="text-white">sdnts</h1>
+        <p class="text-black" style="-webkit-text-stroke: 1px #FFFFFF;">
+          sdnts
+        </p>
+      </section>
+
+      <div
+        class="w-full flex items-center justify-between font-content text-white text-xl opacity-25"
+      >
+        <span class="animate-plusCCW">+</span>
+        <hr class="w-96 animate-borders" />
+        <span class="animate-plusCW">+</span>
+      </div>
+
+      <ul
+        class="w-full mt-16 flex items-center justify-between font-content text-white text-2xl underline underline-offset-8"
+      >
+        <li class="animate-linkReveal"><a href="#work">work</a></li>
+        <li
+          class="animate-linkReveal opacity-0"
+          style="animation-delay: 0.2s; animation-fill-mode: forwards;"
+        >
+          <a href="#projects">projects</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
