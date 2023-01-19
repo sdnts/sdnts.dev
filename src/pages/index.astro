@@ -1,3 +1,7 @@
+---
+import LineDecoration from "../components/line-decoration.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,8 +27,8 @@
       body {
         background: repeating-linear-gradient(
           -45deg,
-          rgba(23, 20, 19, 1),
-          rgba(23, 20, 19, 1) 80px,
+          #171413,
+          #171413 80px,
           rgba(255, 255, 255, 0.05) 80px,
           rgba(255, 255, 255, 0.05) 81px
         );
@@ -38,8 +42,7 @@
     <header class="w-10/12 mt-8 mb-[-2rem] flex items-center justify-start">
       <a href="/" class="opacity-25 hover:opacity-100 transition-all">
         <svg
-          width="32"
-          height="32"
+          class="md:w-8 md:h-8 h-6 w-6"
           viewBox="0 0 128 128"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -52,15 +55,12 @@
     </header>
 
     <main class="w-auto h-full flex flex-col items-center justify-center">
-      <div
-        class="w-full flex items-center justify-between font-content text-white text-xl opacity-25"
-      >
-        <span class="animate-plusCCW">+</span>
-        <hr class="w-96 animate-borders" />
-        <span class="animate-plusCW">+</span>
-      </div>
+      <LineDecoration />
 
-      <section class="mt-8 uppercase text-[16rem]" style="line-height: 0.9;">
+      <section
+        class="md:mt-8 md:mb-6 mt-4 mb-4 uppercase xl:text-[16rem] lg:text-[12rem] md:text-[10rem] sm:text-9xl text-[20vw]"
+        style="line-height: 0.9;"
+      >
         <p class="text-black" style="-webkit-text-stroke: 1px #FFFFFF;">
           sdnts
         </p>
@@ -70,16 +70,10 @@
         </p>
       </section>
 
-      <div
-        class="w-full flex items-center justify-between font-content text-white text-xl opacity-25"
-      >
-        <span class="animate-plusCCW">+</span>
-        <hr class="w-96 animate-borders" />
-        <span class="animate-plusCW">+</span>
-      </div>
+      <LineDecoration />
 
       <ul
-        class="w-full mt-16 flex items-center justify-between font-content text-white text-2xl underline underline-offset-8"
+        class="w-full mt-16 flex items-center justify-between font-content text-white md:text-2xl text-base underline underline-offset-8"
       >
         <li class="animate-linkReveal"><a href="#work">work</a></li>
         <li
